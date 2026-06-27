@@ -24,13 +24,13 @@ npm run preview  # preview the production build
 ### Whop pixel
 
 The [Whop pixel](https://docs.whop.com/developer/guides/pixel) is installed inline
-in `iter-1/index.html` `<head>`. It tracks page views and fires a `cta_click_network`
-custom event when a visitor clicks a CTA.
+in `iter-1/index.html` `<head>`, scoped to company `biz_xTsOp7KQdiwtbP`. It tracks
+page views and fires a `cta_click_network` custom event when a visitor clicks a CTA.
+Live data shows at `https://whop.com/dashboard/biz_xTsOp7KQdiwtbP/pixel`.
 
-> ⚠️ **Before running paid traffic:** replace `biz_xxxxxxxxxxxxx` in
-> `iter-1/index.html` with your real Whop company ID (found at
-> `https://whop.com/dashboard/{biz_id}/pixel`), and verify the stat figures in the
-> hero (currently round placeholders) against current public Whop numbers.
+> ⚠️ **Before running paid traffic:** verify the stat figures in the hero
+> (currently round placeholders — 100K+/$1B+/10M+) against current public Whop
+> numbers.
 
 ### Deploy
 

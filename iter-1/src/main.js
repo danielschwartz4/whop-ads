@@ -5,10 +5,12 @@ const yearEl = document.getElementById('year')
 if (yearEl) yearEl.textContent = String(new Date().getFullYear())
 
 // Fire a Whop pixel event when a visitor clicks a CTA toward the Whop signup.
-// Links navigate normally if JS fails — this is enhancement only.
+// The CTA is a top-level navigation away from this page, so we briefly defer
+// same-tab navigation to give the pixel beacon time to flush before unload.
+// Links still work with no JS (progressive enhancement).
 // Docs: https://docs.whop.com/developer/guides/pixel
 document.querySelectorAll('.js-cta').forEach((el) => {
-  el.addEventListener('click', () => {
+  el.addEventListener('click', (e) => {
     try {
       if (window.whop) {
         window.whop.track('custom', {
@@ -16,9 +18,27 @@ document.querySelectorAll('.js-cta').forEach((el) => {
           location: el.dataset.cta || 'unknown',
         })
       }
-    } catch (e) {
+    } catch (_) {
       /* never block the click */
     }
+
+    // Modified / new-tab clicks keep this page open, so the beacon sends fine —
+    // don't hijack those.
+    const href = el.getAttribute('href')
+    const opensElsewhere =
+      el.target === '_blank' ||
+      e.button !== 0 ||
+      e.metaKey ||
+      e.ctrlKey ||
+      e.shiftKey ||
+      e.altKey
+    if (!href || opensElsewhere) return
+
+    // Same-tab navigation: let the beacon flush (~250ms), then go.
+    e.preventDefault()
+    setTimeout(() => {
+      window.location.href = href
+    }, 250)
   })
 })
 
