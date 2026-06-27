@@ -118,47 +118,40 @@ p {
   background: linear-gradient(135deg, var(--ink), #3a3a40);
 }
 
-/* Hero */
-.hero {
-  text-align: center;
-  padding: clamp(64px, 11vw, 130px) 0 clamp(40px, 6vw, 70px);
-}
-
-.hero__inner {
-  max-width: 720px;
-  margin: 0 auto;
-}
-
+/* Section heading (sits directly above the widgets) */
 .eyebrow {
+  display: block;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.16em;
   font-size: 0.74rem;
   font-weight: 700;
   color: var(--accent);
-  margin-bottom: 22px;
+  margin-bottom: 16px;
 }
 
-.hero__title {
-  font-size: clamp(2.6rem, 7vw, 4.6rem);
+.showcase__title {
+  text-align: center;
+  font-size: clamp(2.2rem, 5.6vw, 3.6rem);
   font-weight: 800;
+  margin: 0 auto clamp(36px, 6vw, 56px);
+  max-width: 760px;
 }
 
-.hero__title .arrow {
+.showcase__title .arrow {
   color: var(--accent);
   font-weight: 500;
   margin: 0 0.1em;
 }
 
-.hero__sub {
-  margin: 22px auto 36px;
-  max-width: 540px;
-  font-size: clamp(1.05rem, 2.2vw, 1.25rem);
-  color: var(--muted);
+.showcase__cta {
+  text-align: center;
+  margin-top: clamp(36px, 6vw, 56px);
 }
 
-/* Showcase: checkout -> ad platforms */
+/* Showcase: heading + checkout -> ad platforms */
 .showcase {
-  padding: clamp(40px, 7vw, 80px) 0 clamp(56px, 9vw, 100px);
+  padding: clamp(56px, 9vw, 110px) 0 clamp(56px, 9vw, 100px);
 }
 
 .flowx {
