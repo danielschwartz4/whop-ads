@@ -156,12 +156,6 @@ p {
   color: var(--muted);
 }
 
-.microdisc {
-  margin-top: 20px;
-  font-size: 0.8rem;
-  color: var(--muted);
-}
-
 /* Showcase: checkout -> ad platforms */
 .showcase {
   padding: clamp(40px, 7vw, 80px) 0 clamp(56px, 9vw, 100px);
