@@ -5,24 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
 
-    <title>Whop for Online Fitness Coaches — Accept Payments, Run Ads, Grow</title>
+    <title>Accept Payments → Run Ads — The Ecommerce Stack Powered by Whop</title>
     <meta
       name="description"
-      content="The all-in-one platform for online fitness coaches. Sell programs and memberships, take payments from day one, and run Meta ads with real attribution — accept payments, run ads, grow your coaching business."
+      content="The simplest way for ecommerce stores to sell more: embed Whop checkout on your store, then scale with ads that actually track. Independent guide."
     />
     <meta name="robots" content="index, follow" />
-
-    <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Whop for Online Fitness Coaches — Accept Payments, Run Ads, Grow" />
+    <meta property="og:title" content="Accept Payments → Run Ads — for ecommerce stores" />
     <meta
       property="og:description"
-      content="Sell programs and memberships, take payments, and run ads that actually track — all in one platform built for coaches."
+      content="Embed Whop checkout on your store, then scale with ads that actually track."
     />
 
     <!--
       ============================================================
-      WHOP PIXEL — scoped to company biz_xTsOp7KQdiwtbP
+      WHOP PIXEL — tracks this page's funnel (page views + CTA clicks).
+      Scoped to company biz_xTsOp7KQdiwtbP.
       Dashboard: https://whop.com/dashboard/biz_xTsOp7KQdiwtbP/pixel
       Docs: https://docs.whop.com/developer/guides/pixel
       ============================================================
@@ -35,18 +34,18 @@
     <!-- END WHOP PIXEL -->
   </head>
   <body>
-    <!-- NAV -->
+    <!-- NAV (independent site — intentionally NOT Whop branding) -->
     <header class="nav">
       <div class="container nav__inner">
-        <a class="nav__brand" href="#top" aria-label="Whop">
-          <span class="nav__logo">✺</span>
-          <span>whop</span>
+        <a class="brand" href="#top" aria-label="Ecom Stack">
+          <span class="brand__mark"></span>
+          <span>Ecom&nbsp;Stack</span>
         </a>
         <a
           class="btn btn--sm js-cta"
           href="https://whop.com/network/?a=dtrey-5sc"
           data-cta="nav"
-          >Get started</a
+          >Try Whop free</a
         >
       </div>
     </header>
@@ -55,210 +54,94 @@
       <!-- HERO -->
       <section class="hero">
         <div class="container hero__inner reveal">
-          <p class="eyebrow">For online fitness coaches</p>
+          <p class="eyebrow">For ecommerce stores</p>
           <h1 class="hero__title">
-            Accept payments. Run ads.
-            <span class="grad">Grow your coaching business.</span>
+            Accept payments <span class="arrow">→</span> run ads
           </h1>
           <p class="hero__sub">
-            Whop is the all-in-one platform for online coaches — sell programs and
-            memberships, get paid from day one, and run ads that actually track.
-            Stop trading hours for money in the DMs and start scaling.
+            The simplest stack for ecommerce brands: embed Whop checkout on your
+            store, then scale with ads that actually track.
           </p>
-          <div class="hero__actions">
-            <a
-              class="btn btn--lg js-cta"
-              href="https://whop.com/network/?a=dtrey-5sc"
-              data-cta="hero"
-              >Start coaching on Whop →</a
-            >
-          </div>
-          <p class="hero__trust">
-            No setup fees · No monthly fees · No minimum ad spend
+          <a
+            class="btn btn--lg js-cta"
+            href="https://whop.com/network/?a=dtrey-5sc"
+            data-cta="hero"
+            >Try Whop free →</a
+          >
+          <p class="microdisc">
+            Independent guide · not affiliated with Whop · we may earn a commission
           </p>
         </div>
       </section>
 
-      <!-- STATS (sourced from Whop's published figures) -->
-      <section class="stats">
-        <div class="container stats__grid reveal">
-          <div class="stat">
-            <div class="stat__num">$100M+</div>
-            <div class="stat__label">monthly GMV across Whop</div>
+      <!-- BEAT 1 — ACCEPT PAYMENTS (embedded checkout showcase) -->
+      <section class="beat">
+        <div class="container beat__grid">
+          <div class="beat__copy reveal">
+            <span class="step">01</span>
+            <h2>Accept payments</h2>
+            <p>
+              Drop Whop's embedded checkout onto any product page. Customers pay
+              without ever leaving your store.
+            </p>
+            <code class="snippet">&lt;WhopCheckoutEmbed planId="plan_…" /&gt;</code>
           </div>
-          <div class="stat">
-            <div class="stat__num">$0</div>
-            <div class="stat__label">platform, setup &amp; monthly fees</div>
-          </div>
-          <div class="stat">
-            <div class="stat__num">5%</div>
-            <div class="stat__label">cash back on ad spend</div>
-          </div>
-        </div>
-      </section>
 
-      <!-- THE THREE-BEAT FLOW -->
-      <section class="section" id="how">
-        <div class="container">
-          <h2 class="section__title reveal">One platform. Three steps to scale.</h2>
-          <p class="section__lead reveal">
-            Everything a coaching business needs to take money in and put ad
-            money to work — without stitching five tools together.
-          </p>
-
-          <ol class="flow">
-            <li class="flow__step reveal">
-              <span class="flow__num">1</span>
-              <h3>Accept payments</h3>
-              <p>
-                Sell 1:1 coaching, group programs, custom plans, and recurring
-                memberships. Whop runs checkout, subscriptions, billing, and
-                global payouts — so you get paid the day you launch, no website
-                required.
-              </p>
-            </li>
-            <li class="flow__arrow reveal" aria-hidden="true">→</li>
-            <li class="flow__step reveal">
-              <span class="flow__num">2</span>
-              <h3>Run ads</h3>
-              <p>
-                Run Meta ads through Whop's agency accounts: lower CPMs, fewer
-                rejections, and same-day account replacement if you're ever
-                flagged. The WHIXEL pixel attributes clients from real payment
-                data and builds lookalikes from real fitness buyers.
-              </p>
-            </li>
-            <li class="flow__arrow reveal" aria-hidden="true">→</li>
-            <li class="flow__step reveal">
-              <span class="flow__num">3</span>
-              <h3>Grow your business</h3>
-              <p>
-                Turn happy clients into affiliates who promote you for a cut,
-                keep members engaged in a built-in community, and watch recurring
-                revenue compound — all from one dashboard.
-              </p>
-            </li>
-          </ol>
-
-          <div class="section__cta reveal">
-            <a
-              class="btn btn--lg js-cta"
-              href="https://whop.com/network/?a=dtrey-5sc"
-              data-cta="flow"
-              >Build your coaching business →</a
-            >
+          <!-- Visual mock of the Whop embedded checkout -->
+          <div class="beat__visual reveal">
+            <div class="checkout" role="img" aria-label="Embedded Whop checkout preview">
+              <div class="checkout__row">
+                <span class="checkout__item">Premium Tee — Black</span>
+                <span class="checkout__price">$48.00</span>
+              </div>
+              <div class="field">
+                <label>Email</label>
+                <div class="field__box">you@store.com</div>
+              </div>
+              <div class="field">
+                <label>Card</label>
+                <div class="field__box field__box--card">
+                  <span>1234&nbsp;1234&nbsp;1234&nbsp;1234</span>
+                  <span class="field__meta">12/28&nbsp;&nbsp;CVC</span>
+                </div>
+              </div>
+              <button class="checkout__pay" type="button" tabindex="-1">Pay $48.00</button>
+              <p class="checkout__secure">🔒 Secured by Whop</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- WHY WHOP ADS -->
-      <section class="section section--alt" id="ads">
-        <div class="container">
-          <h2 class="section__title reveal">
-            Run ads like a brand, not a beginner
-          </h2>
-          <p class="section__lead reveal">
-            Whop Ads is infrastructure, not a managed service — you bring the
-            creative, Whop gives you the unfair advantages.
-          </p>
-          <div class="cards">
-            <article class="card reveal">
-              <div class="card__icon">🏆</div>
-              <h3>Platinum-tier ad accounts</h3>
-              <p>
-                Run on Meta's highest account tier for priority bidding and lower
-                CPMs at scale — with fewer rejections than a standard account.
-              </p>
-            </article>
-            <article class="card reveal">
-              <div class="card__icon">♻️</div>
-              <h3>Same-day account replacement</h3>
-              <p>
-                Get flagged or banned? Skip the multi-day appeal — Whop's agency
-                accounts get you a same-day replacement so you keep spending.
-              </p>
-            </article>
-            <article class="card reveal">
-              <div class="card__icon">🎯</div>
-              <h3>Real-buyer lookalikes</h3>
-              <p>
-                Target lookalike audiences built from real fitness buyers across
-                Whop, filtered by niche, spend, region, and age.
-              </p>
-            </article>
-            <article class="card reveal">
-              <div class="card__icon">💳</div>
-              <h3>Cash flow on your side</h3>
-              <p>
-                No platform, monthly, or minimum-spend fees. Fund with a card and
-                keep your points, or spend revenue the same day — plus 5% cash
-                back with the Whop Card.
-              </p>
-            </article>
+      <!-- BEAT 2 — RUN ADS -->
+      <section class="beat beat--alt">
+        <div class="container beat__grid beat__grid--rev">
+          <!-- Visual mock of attribution metrics -->
+          <div class="beat__visual reveal">
+            <div class="metrics" role="img" aria-label="Ad attribution metrics preview">
+              <div class="metric">
+                <span class="metric__num">3.8×</span>
+                <span class="metric__label">ROAS</span>
+              </div>
+              <div class="metric">
+                <span class="metric__num">$19</span>
+                <span class="metric__label">cost per sale</span>
+              </div>
+              <div class="metric metric--wide">
+                <span class="metric__num">$42,300</span>
+                <span class="metric__label">attributed sales this week</span>
+              </div>
+            </div>
+            <p class="metrics__cap">Illustrative dashboard</p>
           </div>
-        </div>
-      </section>
 
-      <!-- WHAT COACHES SELL -->
-      <section class="section" id="sell">
-        <div class="container">
-          <h2 class="section__title reveal">Built for how coaches actually earn</h2>
-          <div class="pills reveal">
-            <span class="pill">1:1 coaching</span>
-            <span class="pill">Group coaching</span>
-            <span class="pill">Training programs</span>
-            <span class="pill">Nutrition &amp; meal plans</span>
-            <span class="pill">Monthly memberships</span>
-            <span class="pill">Challenge communities</span>
-            <span class="pill">Form-check groups</span>
-            <span class="pill">Accountability communities</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- FAQ -->
-      <section class="section section--alt" id="faq">
-        <div class="container container--narrow">
-          <h2 class="section__title reveal">Questions, answered</h2>
-          <div class="faq reveal">
-            <details>
-              <summary>Do I need my own website or tech setup?</summary>
-              <p>
-                No. Set up your storefront, list your coaching offers, and share
-                your link — Whop handles checkout, billing, and access. No code.
-              </p>
-            </details>
-            <details>
-              <summary>Can I sell recurring memberships?</summary>
-              <p>
-                Yes. Subscriptions and recurring billing are built in, so you can
-                run monthly coaching, communities, and memberships out of the box.
-              </p>
-            </details>
-            <details>
-              <summary>I already run Meta ads — can I bring my account?</summary>
-              <p>
-                Yes. Once approved for Whop Ads you connect your existing ad
-                account, page, and pixel via OAuth — connecting your pixel
-                preserves its learnings and event history.
-              </p>
-            </details>
-            <details>
-              <summary>What does it cost?</summary>
-              <p>
-                Creating your business is free; Whop earns a fee only when you make
-                a sale. Whop Ads has no platform, setup, monthly, or minimum-spend
-                fees — you only pay for the ad spend itself.
-              </p>
-            </details>
-            <details>
-              <summary>What if my ad account gets banned?</summary>
-              <p>
-                Whop's agency accounts run at Meta's highest tier, so rejections
-                are rarer — and if you're ever restricted, you get a same-day
-                account replacement instead of days of downtime.
-              </p>
-            </details>
+          <div class="beat__copy reveal">
+            <span class="step">02</span>
+            <h2>Run ads</h2>
+            <p>
+              Whop's pixel attributes every sale from real payment data — so you
+              scale Meta ads on agency accounts with lower CPMs and same-day
+              account replacement.
+            </p>
           </div>
         </div>
       </section>
@@ -266,16 +149,12 @@
       <!-- FINAL CTA -->
       <section class="final">
         <div class="container final__inner reveal">
-          <h2 class="final__title">Your coaching business, on autopilot</h2>
-          <p class="final__sub">
-            Accept payments, run ads, and grow — all in one place. It's free to
-            start.
-          </p>
+          <h2>Start selling with Whop</h2>
           <a
-            class="btn btn--lg btn--invert js-cta"
+            class="btn btn--lg js-cta"
             href="https://whop.com/network/?a=dtrey-5sc"
             data-cta="final"
-            >Start coaching on Whop →</a
+            >Try Whop free →</a
           >
         </div>
       </section>
@@ -284,14 +163,12 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container footer__inner">
-        <p class="footer__brand"><span class="nav__logo">✺</span> whop</p>
         <p class="footer__disc">
-          This is an independent promotional page for online fitness coaches. We
-          may earn a commission when you sign up through links on this page. Not
-          affiliated with or endorsed by Whop beyond the standard affiliate
-          program.
+          <strong>Ecom Stack</strong> is an independent website. It is not
+          affiliated with, run by, or endorsed by Whop. We may earn a commission
+          when you sign up through links on this page.
         </p>
-        <p class="footer__copy">© <span id="year"></span> · All rights reserved</p>
+        <p class="footer__copy">© <span id="year"></span> Ecom Stack</p>
       </div>
     </footer>
 
