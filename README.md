@@ -13,9 +13,12 @@ Ad landing pages that drive business owners to start a business on Whop via affi
 
 A static landing page built with [Vite](https://vitejs.dev), targeting
 **ecommerce stores** — tagline "Accept payments → run ads". Clean light design.
-It showcases Whop's [embedded checkout](https://docs.whop.com/payments/checkout-embed)
-and is framed as an **independent affiliate page** (its own "Ecom Stack" identity,
-third-person about Whop, clear non-affiliation disclosure) — not Whop's own ad.
+The centerpiece is a visual flow: a **dummy Whop [embedded checkout](https://docs.whop.com/payments/checkout-embed)**
+→ arrow → an **ad-platforms panel** (Meta / TikTok / Google / Snapchat, inline-SVG
+logos). The checkout is a styled mock because a placeholder `plan_…` renders blank;
+the **real embed code is ready in an HTML comment** in `index.html` — drop in a real
+plan id to go live. Framed as an **independent affiliate page** (its own "Ecom Stack"
+identity, third-person about Whop, clear non-affiliation disclosure) — not Whop's own ad.
 
 ```bash
 cd iter-1

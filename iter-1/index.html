@@ -8,14 +8,14 @@
     <title>Accept Payments → Run Ads — The Ecommerce Stack Powered by Whop</title>
     <meta
       name="description"
-      content="The simplest way for ecommerce stores to sell more: embed Whop checkout on your store, then scale with ads that actually track. Independent guide."
+      content="The simplest way for ecommerce stores to sell more: embed Whop checkout on your store, then scale with ads on Meta, TikTok, Google and Snapchat. Independent guide."
     />
     <meta name="robots" content="index, follow" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Accept Payments → Run Ads — for ecommerce stores" />
     <meta
       property="og:description"
-      content="Embed Whop checkout on your store, then scale with ads that actually track."
+      content="Embed Whop checkout on your store, then scale with ads on Meta, TikTok, Google and Snapchat."
     />
 
     <!--
@@ -32,6 +32,24 @@
       whop.track("page");
     </script>
     <!-- END WHOP PIXEL -->
+
+    <!--
+      ============================================================
+      REAL WHOP EMBEDDED CHECKOUT — ready to activate.
+      Docs: https://docs.whop.com/payments/checkout-embed
+      The checkout panel below is a styled DUMMY because a placeholder plan id
+      renders blank. To go live: (1) uncomment the loader script below,
+      (2) replace the dummy ".checkout" markup with the <div> snippet, and
+      (3) drop in a real plan_… id from your Whop dashboard.
+
+      <script async defer src="https://js.whop.com/static/checkout/loader.js"></script>
+      <div
+        data-whop-checkout-plan-id="plan_XXXXXXXXX"
+        data-whop-checkout-theme="light"
+        data-whop-checkout-affiliate-code="dtrey-5sc"
+      ></div>
+      ============================================================
+    -->
   </head>
   <body>
     <!-- NAV (independent site — intentionally NOT Whop branding) -->
@@ -60,7 +78,7 @@
           </h1>
           <p class="hero__sub">
             The simplest stack for ecommerce brands: embed Whop checkout on your
-            store, then scale with ads that actually track.
+            store, then scale with ads on every major platform.
           </p>
           <a
             class="btn btn--lg js-cta"
@@ -74,75 +92,102 @@
         </div>
       </section>
 
-      <!-- BEAT 1 — ACCEPT PAYMENTS (embedded checkout showcase) -->
-      <section class="beat">
-        <div class="container beat__grid">
-          <div class="beat__copy reveal">
-            <span class="step">01</span>
-            <h2>Accept payments</h2>
-            <p>
-              Drop Whop's embedded checkout onto any product page. Customers pay
-              without ever leaving your store.
-            </p>
-            <code class="snippet">&lt;WhopCheckoutEmbed planId="plan_…" /&gt;</code>
-          </div>
+      <!-- SHOWCASE: embedded checkout  →  ad platforms -->
+      <section class="showcase">
+        <div class="container flowx">
+          <!-- 01 · Accept payments (dummy Whop embedded checkout) -->
+          <figure class="flowx__item reveal">
+            <div class="panel">
+              <div class="checkout" role="img" aria-label="Whop embedded checkout preview">
+                <div class="checkout__row">
+                  <span>Premium Tee — Black</span>
+                  <span class="checkout__price">$48.00</span>
+                </div>
+                <div class="field">
+                  <label>Email</label>
+                  <div class="field__box">you@store.com</div>
+                </div>
+                <div class="field">
+                  <label>Card details</label>
+                  <div class="field__box field__box--card">
+                    <span>1234&nbsp;1234&nbsp;1234&nbsp;1234</span>
+                    <span class="field__meta">12 / 28&nbsp;&nbsp;CVC</span>
+                  </div>
+                </div>
+                <button class="checkout__pay" type="button" tabindex="-1">
+                  Pay $48.00
+                </button>
+                <p class="checkout__secure">🔒 Secured by Whop</p>
+              </div>
+            </div>
+            <figcaption class="flowx__cap">
+              <span class="step">01</span>
+              <strong>Accept payments</strong>
+              <span class="cap">Embed Whop checkout on your store</span>
+            </figcaption>
+          </figure>
 
-          <!-- Visual mock of the Whop embedded checkout -->
-          <div class="beat__visual reveal">
-            <div class="checkout" role="img" aria-label="Embedded Whop checkout preview">
-              <div class="checkout__row">
-                <span class="checkout__item">Premium Tee — Black</span>
-                <span class="checkout__price">$48.00</span>
-              </div>
-              <div class="field">
-                <label>Email</label>
-                <div class="field__box">you@store.com</div>
-              </div>
-              <div class="field">
-                <label>Card</label>
-                <div class="field__box field__box--card">
-                  <span>1234&nbsp;1234&nbsp;1234&nbsp;1234</span>
-                  <span class="field__meta">12/28&nbsp;&nbsp;CVC</span>
+          <!-- arrow -->
+          <div class="flowx__arrow reveal" aria-hidden="true">→</div>
+
+          <!-- 02 · Run ads (ad platform logos) -->
+          <figure class="flowx__item reveal">
+            <div class="panel adpanel">
+              <p class="adpanel__label">Run ads on</p>
+              <div class="adgrid">
+                <!-- Meta -->
+                <div class="adtile">
+                  <svg class="adlogo" viewBox="0 0 64 32" aria-hidden="true">
+                    <defs>
+                      <linearGradient id="meta" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0" stop-color="#0099FF" />
+                        <stop offset="1" stop-color="#0064E0" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M32 16 C26 4 10 4 10 16 C10 28 26 28 32 16 C38 4 54 4 54 16 C54 28 38 28 32 16 Z"
+                      fill="none" stroke="url(#meta)" stroke-width="6" stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span class="adname">Meta</span>
+                </div>
+
+                <!-- TikTok -->
+                <div class="adtile">
+                  <svg class="adlogo" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M16.5 3c.3 2.2 1.9 3.9 4 4.2v3.1c-1.5 0-2.9-.5-4-1.3v6.5a6 6 0 1 1-6-6c.34 0 .67.03 1 .09v3.2a2.9 2.9 0 1 0 2 2.76V3z" fill="#25F4EE" transform="translate(-1.1 .9)"/>
+                    <path d="M16.5 3c.3 2.2 1.9 3.9 4 4.2v3.1c-1.5 0-2.9-.5-4-1.3v6.5a6 6 0 1 1-6-6c.34 0 .67.03 1 .09v3.2a2.9 2.9 0 1 0 2 2.76V3z" fill="#FE2C55" transform="translate(1.1 -.5)"/>
+                    <path d="M16.5 3c.3 2.2 1.9 3.9 4 4.2v3.1c-1.5 0-2.9-.5-4-1.3v6.5a6 6 0 1 1-6-6c.34 0 .67.03 1 .09v3.2a2.9 2.9 0 1 0 2 2.76V3z" fill="#0B0B0C"/>
+                  </svg>
+                  <span class="adname">TikTok</span>
+                </div>
+
+                <!-- Google -->
+                <div class="adtile">
+                  <svg class="adlogo" viewBox="0 0 48 48" aria-hidden="true">
+                    <path fill="#FFC107" d="M43.6 20.1H42V20H24v8h11.3C33.7 32.7 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 8 3l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.7-.4-3.9z"/>
+                    <path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 8 3l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/>
+                    <path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.5 39.6 16.2 44 24 44z"/>
+                    <path fill="#1976D2" d="M43.6 20.1H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.7-.4-3.9z"/>
+                  </svg>
+                  <span class="adname">Google</span>
+                </div>
+
+                <!-- Snapchat -->
+                <div class="adtile">
+                  <svg class="adlogo" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 2.4c2.7 0 4.6 2 4.7 4.8 0 .5 0 1 0 1.5 0 .5.2.8.7.9.4.1.9.2 1.2.5.2.2.2.5 0 .7-.3.4-1 .5-1.6.7.2.4.5.9 1 1.1l-.5.8c-.6-.2-1.2-.3-1.7 0-.4.2-.7.7-1.3 1-.7.4-1.6.4-2.5.4s-1.8 0-2.5-.4c-.6-.3-.9-.8-1.3-1-.5-.3-1.1-.2-1.7 0l-.5-.8c.5-.2.8-.7 1-1.1-.6-.2-1.3-.3-1.6-.7-.2-.2-.2-.5 0-.7.3-.3.8-.4 1.2-.5.5-.1.7-.4.7-.9 0-.5 0-1 0-1.5C7.4 4.4 9.3 2.4 12 2.4z" fill="#FFFC00" stroke="#0B0B0C" stroke-width="0.7" stroke-linejoin="round"/>
+                  </svg>
+                  <span class="adname">Snapchat</span>
                 </div>
               </div>
-              <button class="checkout__pay" type="button" tabindex="-1">Pay $48.00</button>
-              <p class="checkout__secure">🔒 Secured by Whop</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- BEAT 2 — RUN ADS -->
-      <section class="beat beat--alt">
-        <div class="container beat__grid beat__grid--rev">
-          <!-- Visual mock of attribution metrics -->
-          <div class="beat__visual reveal">
-            <div class="metrics" role="img" aria-label="Ad attribution metrics preview">
-              <div class="metric">
-                <span class="metric__num">3.8×</span>
-                <span class="metric__label">ROAS</span>
-              </div>
-              <div class="metric">
-                <span class="metric__num">$19</span>
-                <span class="metric__label">cost per sale</span>
-              </div>
-              <div class="metric metric--wide">
-                <span class="metric__num">$42,300</span>
-                <span class="metric__label">attributed sales this week</span>
-              </div>
-            </div>
-            <p class="metrics__cap">Illustrative dashboard</p>
-          </div>
-
-          <div class="beat__copy reveal">
-            <span class="step">02</span>
-            <h2>Run ads</h2>
-            <p>
-              Whop's pixel attributes every sale from real payment data — so you
-              scale Meta ads on agency accounts with lower CPMs and same-day
-              account replacement.
-            </p>
-          </div>
+            <figcaption class="flowx__cap">
+              <span class="step">02</span>
+              <strong>Run ads</strong>
+              <span class="cap">Scale on every major platform</span>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -165,8 +210,9 @@
       <div class="container footer__inner">
         <p class="footer__disc">
           <strong>Ecom Stack</strong> is an independent website. It is not
-          affiliated with, run by, or endorsed by Whop. We may earn a commission
-          when you sign up through links on this page.
+          affiliated with, run by, or endorsed by Whop. Brand names and logos are
+          the property of their respective owners. We may earn a commission when
+          you sign up through links on this page.
         </p>
         <p class="footer__copy">© <span id="year"></span> Ecom Stack</p>
       </div>
