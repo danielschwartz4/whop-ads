@@ -218,71 +218,12 @@ p {
   padding: 22px;
 }
 
-/* Embedded-checkout mock */
-.checkout__row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 16px;
-  margin-bottom: 16px;
-  border-bottom: 1px solid var(--line);
-  font-weight: 600;
-}
-
-.checkout__price {
-  font-variant-numeric: tabular-nums;
-}
-
-.field {
-  margin-bottom: 13px;
-}
-
-.field label {
-  display: block;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--muted);
-  margin-bottom: 6px;
-}
-
-.field__box {
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 12px 14px;
-  color: #9aa0a6;
-  font-size: 0.95rem;
-  background: var(--bg-soft);
-}
-
-.field__box--card {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.field__meta {
-  color: #b5bac0;
-  white-space: nowrap;
-}
-
-.checkout__pay {
+/* Embedded-checkout container (the real Whop checkout iframe mounts here) */
+.checkout-embed {
   width: 100%;
-  margin-top: 8px;
-  padding: 14px;
-  border: none;
-  border-radius: 12px;
-  background: var(--accent);
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 700;
-  cursor: default;
-}
-
-.checkout__secure {
-  text-align: center;
-  margin-top: 14px;
-  font-size: 0.78rem;
-  color: var(--muted);
+  max-width: 400px;
+  margin: 0 auto;
+  min-height: 420px;
 }
 
 /* Ad platforms panel */

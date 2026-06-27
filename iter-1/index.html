@@ -33,23 +33,9 @@
     </script>
     <!-- END WHOP PIXEL -->
 
-    <!--
-      ============================================================
-      REAL WHOP EMBEDDED CHECKOUT — ready to activate.
-      Docs: https://docs.whop.com/payments/checkout-embed
-      The checkout panel below is a styled DUMMY because a placeholder plan id
-      renders blank. To go live: (1) uncomment the loader script below,
-      (2) replace the dummy ".checkout" markup with the <div> snippet, and
-      (3) drop in a real plan_… id from your Whop dashboard.
-
-      <script async defer src="https://js.whop.com/static/checkout/loader.js"></script>
-      <div
-        data-whop-checkout-plan-id="plan_XXXXXXXXX"
-        data-whop-checkout-theme="light"
-        data-whop-checkout-affiliate-code="dtrey-5sc"
-      ></div>
-      ============================================================
-    -->
+    <!-- Whop embedded checkout loader — renders the real checkout iframe.
+         Docs: https://docs.whop.com/payments/checkout-embed -->
+    <script async defer src="https://js.whop.com/static/checkout/loader.js"></script>
   </head>
   <body>
     <!-- NAV (independent site — intentionally NOT Whop branding) -->
@@ -92,30 +78,16 @@
       <!-- SHOWCASE: embedded checkout  →  ad platforms -->
       <section class="showcase">
         <div class="container flowx">
-          <!-- 01 · Accept payments (dummy Whop embedded checkout) -->
+          <!-- 01 · Accept payments (REAL Whop embedded checkout; submit button hidden = display only) -->
           <figure class="flowx__item reveal">
-            <div class="panel">
-              <div class="checkout" role="img" aria-label="Whop embedded checkout preview">
-                <div class="checkout__row">
-                  <span>Premium Tee — Black</span>
-                  <span class="checkout__price">$48.00</span>
-                </div>
-                <div class="field">
-                  <label>Email</label>
-                  <div class="field__box">you@store.com</div>
-                </div>
-                <div class="field">
-                  <label>Card details</label>
-                  <div class="field__box field__box--card">
-                    <span>1234&nbsp;1234&nbsp;1234&nbsp;1234</span>
-                    <span class="field__meta">12 / 28&nbsp;&nbsp;CVC</span>
-                  </div>
-                </div>
-                <button class="checkout__pay" type="button" tabindex="-1">
-                  Pay $48.00
-                </button>
-                <p class="checkout__secure">🔒 Secured by Whop</p>
-              </div>
+            <div class="checkout-embed">
+              <div
+                id="whop-embedded-checkout"
+                data-whop-checkout-plan-id="plan_R6TB8x4ajtkWj"
+                data-whop-checkout-theme="light"
+                data-whop-checkout-hide-submit-button="true"
+                data-whop-checkout-affiliate-code="dtrey-5sc"
+              ></div>
             </div>
             <figcaption class="flowx__cap">
               <span class="step">01</span>
