@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
 
-    <title>Embed a Checkout → Get Distribution — The Ecommerce Stack Powered by Whop</title>
+    <title>Run Ads for Your Ecommerce Store — Powered by Whop</title>
     <meta
       name="description"
-      content="The simplest way for ecommerce stores to sell more: embed Whop checkout on your store, then scale with ads on Meta, TikTok, Google and Snapchat. Independent guide."
+      content="Launch ads on Meta, TikTok, Google and Snapchat for your ecommerce store with Whop. The ad that brought you here was launched on Whop in under 5 minutes."
     />
     <meta name="robots" content="index, follow" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Embed a Checkout → Get Distribution — for ecommerce stores" />
+    <meta property="og:title" content="Run Ads for Your Ecommerce Store — Powered by Whop" />
     <meta
       property="og:description"
-      content="Embed Whop checkout on your store, then scale with ads on Meta, TikTok, Google and Snapchat."
+      content="Launch ads on every major platform with Whop — your ecommerce store can too."
     />
 
     <!--
@@ -32,10 +32,6 @@
       whop.track("page");
     </script>
     <!-- END WHOP PIXEL -->
-
-    <!-- Whop embedded checkout loader — renders the real checkout iframe.
-         Docs: https://docs.whop.com/payments/checkout-embed -->
-    <script async defer src="https://js.whop.com/static/checkout/loader.js"></script>
   </head>
   <body>
     <!-- NAV (independent site — intentionally NOT Whop branding) -->
@@ -55,21 +51,9 @@
     </header>
 
     <main id="top">
-      <!-- Meta hook: the ad that drove this visit was itself launched on Whop -->
-      <section class="topbanner reveal">
-        <div class="container">
-          <p class="topbanner__hook">
-            ⚡ The ad you clicked was launched on Whop in &lt;5 minutes
-          </p>
-          <p class="topbanner__sub">
-            Your ecommerce store can accept payments and run ads on Whop too
-          </p>
-        </div>
-      </section>
-
-      <!-- SHOWCASE: heading + (embedded checkout → ad platforms) -->
-      <section class="showcase">
-        <div class="container">
+      <!-- HERO: centered, ads-focused -->
+      <section class="hero">
+        <div class="container hero__inner">
           <div class="topcta reveal">
             <a
               class="pill-cta js-cta"
@@ -78,30 +62,17 @@
               >For ecommerce stores <span class="arrow-ne">↗</span></a
             >
           </div>
-          <h1 class="showcase__title reveal">
-            <span class="title-part">Embed a checkout</span>
-            <span class="arrow">→</span>
-            <span class="title-part">Get distribution</span>
+
+          <h1 class="hook reveal">
+            The ad you clicked was launched on Whop in
+            <span class="hl">&lt;5 minutes</span>
           </h1>
-          <div class="flowx">
-          <!-- 01 · Embed a checkout (REAL Whop embedded checkout; submit button hidden = display only) -->
-          <figure class="flowx__item reveal">
-            <div class="checkout-embed">
-              <div
-                id="whop-embedded-checkout"
-                data-whop-checkout-plan-id="plan_R6TB8x4ajtkWj"
-                data-whop-checkout-theme="light"
-                data-whop-checkout-hide-submit-button="true"
-                data-whop-checkout-affiliate-code="dtrey-5sc"
-              ></div>
-            </div>
-          </figure>
+          <p class="hook-sub reveal">
+            Your ecommerce store can accept payments and run ads on Whop too
+          </p>
 
-          <!-- middle-column spacer; the only arrow is the one in the headline -->
-          <div class="flowx__arrow" aria-hidden="true"></div>
-
-          <!-- 02 · Get distribution (ad platform logos) -->
-          <figure class="flowx__item reveal">
+          <!-- Ads widget -->
+          <div class="ad-center reveal">
             <div class="panel adpanel">
               <p class="adpanel__label">Advertise on</p>
               <div class="adgrid">
@@ -152,10 +123,9 @@
                 </div>
               </div>
             </div>
-          </figure>
           </div>
 
-          <div class="showcase__cta reveal">
+          <div class="hero__cta reveal">
             <a
               class="btn btn--lg js-cta"
               href="https://whop.com/network/?a=dtrey-5sc"
