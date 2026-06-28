@@ -130,34 +130,6 @@ p {
   width: 100%;
 }
 
-/* Top pill CTA */
-.topcta {
-  margin-bottom: clamp(22px, 4vw, 36px);
-}
-
-.pill-cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 1.05rem;
-  font-weight: 650;
-  padding: 12px 24px;
-  border-radius: 999px;
-  background: var(--accent-soft);
-  color: var(--accent);
-  border: 1px solid rgba(109, 40, 217, 0.25);
-  transition: transform 0.15s ease, background 0.15s ease;
-}
-
-.pill-cta:hover {
-  transform: translateY(-1px);
-  background: #e9e0fb;
-}
-
-.arrow-ne {
-  font-weight: 700;
-}
-
 /* Hook (the two sentences) */
 .hook {
   font-size: clamp(1.7rem, 4.6vw, 3rem);
