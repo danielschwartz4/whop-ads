@@ -118,6 +118,27 @@ p {
   background: linear-gradient(135deg, var(--ink), #3a3a40);
 }
 
+/* Top meta banner */
+.topbanner {
+  background: var(--accent-soft);
+  border-bottom: 1px solid rgba(109, 40, 217, 0.15);
+  text-align: center;
+  padding: clamp(14px, 2.6vw, 22px) 0;
+}
+
+.topbanner__hook {
+  font-weight: 700;
+  font-size: clamp(1rem, 2.3vw, 1.25rem);
+  color: var(--accent);
+  letter-spacing: -0.01em;
+}
+
+.topbanner__sub {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: clamp(0.9rem, 1.9vw, 1.05rem);
+}
+
 /* Top pill CTA + section heading (sit directly above the widgets) */
 .topcta {
   text-align: center;
@@ -176,7 +197,7 @@ p {
 
 /* Showcase: heading + checkout -> ad platforms */
 .showcase {
-  padding: clamp(56px, 9vw, 110px) 0 clamp(56px, 9vw, 100px);
+  padding: clamp(40px, 7vw, 80px) 0 clamp(56px, 9vw, 100px);
 }
 
 .flowx {
